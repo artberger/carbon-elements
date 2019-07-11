@@ -7,12 +7,10 @@
 
 import { breakpoint, breakpoints, px, rem } from '@carbon/layout';
 import { fluid } from './fluid';
-import { fontFamilies } from './fontFamily';
 import { fontWeights } from './fontWeight';
 import { scale } from './scale';
 
 export const caption01 = {
-  fontFamily: fontFamilies.sans,
   fontSize: rem(scale[0]),
   fontWeight: fontWeights.regular,
   lineHeight: rem(16),
@@ -20,7 +18,6 @@ export const caption01 = {
 };
 
 export const label01 = {
-  fontFamily: fontFamilies.sans,
   fontSize: rem(scale[0]),
   fontWeight: fontWeights.regular,
   lineHeight: rem(16),
@@ -28,7 +25,6 @@ export const label01 = {
 };
 
 export const helperText01 = {
-  fontFamily: fontFamilies.sans,
   fontSize: rem(scale[0]),
   fontStyle: 'italic',
   lineHeight: rem(16),
@@ -36,7 +32,6 @@ export const helperText01 = {
 };
 
 export const bodyShort01 = {
-  fontFamily: fontFamilies.sans,
   fontSize: rem(scale[1]),
   fontWeight: fontWeights.regular,
   lineHeight: rem(18),
@@ -44,7 +39,6 @@ export const bodyShort01 = {
 };
 
 export const bodyLong01 = {
-  fontFamily: fontFamilies.sans,
   fontSize: rem(scale[1]),
   fontWeight: fontWeights.regular,
   lineHeight: rem(20),
@@ -52,7 +46,6 @@ export const bodyLong01 = {
 };
 
 export const bodyShort02 = {
-  fontFamily: fontFamilies.sans,
   fontSize: rem(scale[2]),
   fontWeight: fontWeights.regular,
   lineHeight: rem(22),
@@ -60,7 +53,6 @@ export const bodyShort02 = {
 };
 
 export const bodyLong02 = {
-  fontFamily: fontFamilies.sans,
   fontSize: rem(scale[2]),
   fontWeight: fontWeights.regular,
   lineHeight: rem(24),
@@ -68,7 +60,6 @@ export const bodyLong02 = {
 };
 
 export const code01 = {
-  fontFamily: fontFamilies.mono,
   fontSize: rem(scale[0]),
   fontWeight: fontWeights.regular,
   lineHeight: rem(16),
@@ -76,7 +67,6 @@ export const code01 = {
 };
 
 export const code02 = {
-  fontFamily: fontFamilies.mono,
   fontSize: rem(scale[1]),
   fontWeight: fontWeights.regular,
   lineHeight: rem(20),
@@ -84,23 +74,24 @@ export const code02 = {
 };
 
 export const heading01 = {
-  fontFamily: fontFamilies.sans,
   fontSize: rem(scale[1]),
   fontWeight: fontWeights.semibold,
   lineHeight: rem(18),
   letterSpacing: px(0.16),
 };
 
+export const productiveHeading01 = heading01;
+
 export const heading02 = {
-  fontFamily: fontFamilies.sans,
   fontSize: rem(scale[2]),
   fontWeight: fontWeights.semibold,
   lineHeight: rem(22),
   letterSpacing: 0,
 };
 
+export const productiveHeading02 = heading02;
+
 export const productiveHeading03 = {
-  fontFamily: fontFamilies.sans,
   fontSize: rem(scale[4]),
   fontWeight: fontWeights.regular,
   lineHeight: rem(26),
@@ -108,7 +99,6 @@ export const productiveHeading03 = {
 };
 
 export const productiveHeading04 = {
-  fontFamily: fontFamilies.sans,
   fontSize: rem(scale[6]),
   fontWeight: fontWeights.regular,
   lineHeight: rem(36),
@@ -116,15 +106,31 @@ export const productiveHeading04 = {
 };
 
 export const productiveHeading05 = {
-  fontFamily: fontFamilies.sans,
   fontSize: rem(scale[7]),
   fontWeight: fontWeights.regular,
   lineHeight: rem(40),
   letterSpacing: 0,
 };
 
+export const productiveHeading06 = {
+  fontSize: rem(scale[9]),
+  fontWeight: fontWeights.light,
+  lineHeight: rem(50),
+  letterSpacing: 0,
+};
+
+export const productiveHeading07 = {
+  fontSize: rem(scale[11]),
+  fontWeight: fontWeights.light,
+  lineHeight: rem(64),
+  letterSpacing: 0,
+};
+
+export const expressiveHeading01 = heading01;
+
+export const expressiveHeading02 = heading02;
+
 export const expressiveHeading03 = fluid({
-  fontFamily: fontFamilies.sans,
   fontSize: rem(scale[4]),
   fontWeight: fontWeights.regular,
   lineHeight: '130%',
@@ -141,7 +147,6 @@ export const expressiveHeading03 = fluid({
 });
 
 export const expressiveHeading04 = fluid({
-  fontFamily: fontFamilies.sans,
   fontSize: rem(scale[6]),
   fontWeight: fontWeights.regular,
   lineHeight: '129%',
@@ -158,7 +163,6 @@ export const expressiveHeading04 = fluid({
 });
 
 export const expressiveHeading05 = fluid({
-  fontFamily: fontFamilies.sans,
   fontSize: rem(scale[7]),
   fontWeight: fontWeights.regular,
   lineHeight: '125%',
@@ -166,28 +170,24 @@ export const expressiveHeading05 = fluid({
   breakpoints: {
     md: {
       fontSize: rem(scale[8]),
-      fontFamily: fontFamilies.sans,
       fontWeight: fontWeights.light,
       lineHeight: '122%',
       letterSpacing: 0,
     },
     lg: {
       fontSize: rem(scale[9]),
-      fontFamily: fontFamilies.sans,
       fontWeight: fontWeights.light,
       lineHeight: '119%',
       letterSpacing: 0,
     },
     xlg: {
       fontSize: rem(scale[10]),
-      fontFamily: fontFamilies.sans,
       fontWeight: fontWeights.light,
       lineHeight: '117%',
       letterSpacing: 0,
     },
     max: {
       fontSize: rem(scale[12]),
-      fontFamily: fontFamilies.sans,
       fontWeight: fontWeights.light,
       lineHeight: rem(70),
       letterSpacing: 0,
@@ -196,7 +196,6 @@ export const expressiveHeading05 = fluid({
 });
 
 export const expressiveHeading06 = fluid({
-  fontFamily: fontFamilies.sans,
   fontSize: rem(scale[7]),
   fontWeight: fontWeights.semibold,
   lineHeight: '125%',
@@ -204,28 +203,24 @@ export const expressiveHeading06 = fluid({
   breakpoints: {
     md: {
       fontSize: rem(scale[8]),
-      fontFamily: fontFamilies.sans,
       fontWeight: fontWeights.semibold,
       lineHeight: '122%',
       letterSpacing: 0,
     },
     lg: {
       fontSize: rem(scale[9]),
-      fontFamily: fontFamilies.sans,
       fontWeight: fontWeights.semibold,
       lineHeight: '119%',
       letterSpacing: 0,
     },
     xlg: {
       fontSize: rem(scale[10]),
-      fontFamily: fontFamilies.sans,
       fontWeight: fontWeights.semibold,
       lineHeight: '117%',
       letterSpacing: 0,
     },
     max: {
       fontSize: rem(scale[12]),
-      fontFamily: fontFamilies.sans,
       fontWeight: fontWeights.semibold,
       lineHeight: rem(70),
       letterSpacing: 0,
@@ -234,7 +229,6 @@ export const expressiveHeading06 = fluid({
 });
 
 export const expressiveParagraph01 = fluid({
-  fontFamily: fontFamilies.sans,
   fontSize: rem(scale[5]),
   fontWeight: fontWeights.light,
   lineHeight: '125%',
@@ -250,7 +244,6 @@ export const expressiveParagraph01 = fluid({
 });
 
 export const quotation01 = fluid({
-  fontFamily: fontFamilies.serif,
   fontSize: rem(scale[4]),
   fontWeight: fontWeights.regular,
   lineHeight: '130%',
@@ -258,27 +251,23 @@ export const quotation01 = fluid({
   breakpoints: {
     md: {
       fontSize: rem(scale[4]),
-      fontFamily: fontFamilies.serif,
       fontWeight: fontWeights.regular,
       letterSpacing: 0,
     },
     lg: {
       fontSize: rem(scale[5]),
-      fontFamily: fontFamilies.serif,
       fontWeight: fontWeights.regular,
       lineHeight: '125%',
       letterSpacing: 0,
     },
     xlg: {
       fontSize: rem(scale[6]),
-      fontFamily: fontFamilies.serif,
       fontWeight: fontWeights.regular,
       lineHeight: '129%',
       letterSpacing: 0,
     },
     max: {
       fontSize: rem(scale[7]),
-      fontFamily: fontFamilies.serif,
       fontWeight: fontWeights.regular,
       lineHeight: '125%',
       letterSpacing: 0,
@@ -287,7 +276,6 @@ export const quotation01 = fluid({
 });
 
 export const quotation02 = fluid({
-  fontFamily: fontFamilies.serif,
   fontSize: rem(scale[7]),
   fontWeight: fontWeights.light,
   lineHeight: '125%',
@@ -312,7 +300,6 @@ export const quotation02 = fluid({
 });
 
 export const display01 = fluid({
-  fontFamily: fontFamilies.sans,
   fontSize: rem(scale[9]),
   fontWeight: fontWeights.light,
   lineHeight: '119%',
@@ -336,7 +323,6 @@ export const display01 = fluid({
 });
 
 export const display02 = fluid({
-  fontFamily: fontFamilies.sans,
   fontSize: rem(scale[9]),
   fontWeight: fontWeights.semibold,
   lineHeight: '119%',
@@ -360,7 +346,6 @@ export const display02 = fluid({
 });
 
 export const display03 = fluid({
-  fontFamily: fontFamilies.sans,
   fontSize: rem(scale[9]),
   fontWeight: fontWeights.light,
   lineHeight: '119%',
@@ -388,7 +373,6 @@ export const display03 = fluid({
 });
 
 export const display04 = fluid({
-  fontFamily: fontFamilies.sans,
   fontSize: rem(scale[9]),
   fontWeight: fontWeights.semibold,
   lineHeight: '119%',
